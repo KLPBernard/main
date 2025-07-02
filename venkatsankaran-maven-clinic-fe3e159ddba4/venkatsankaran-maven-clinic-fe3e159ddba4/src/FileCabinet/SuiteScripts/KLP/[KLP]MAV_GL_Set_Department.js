@@ -14,7 +14,7 @@ function customizeGlImpact(transactionRecord, standardLines, customLines, book) 
         for (var index = 0; index < memoKeyWords.length; index++) {
             var compareMemo = memoKeyWords[index].toLocaleLowerCase().trim();
             compareMemo = compareMemo.replace(/\s/g, '');
-            var lineMemo = memo.toLocaleLowerCase();
+            var lineMemo = memo.toLowerCase();
             lineMemo = lineMemo.replace(/\s/g, '');
 
             if (lineMemo.indexOf(compareMemo) >= 0) {
